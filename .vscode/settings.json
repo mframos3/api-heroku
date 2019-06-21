@@ -1,3 +1,6 @@
 {
-    "python.pythonPath": "/Users/matiasramos/.local/share/virtualenvs/api-heroku-TwuSh8uE/bin/python"
+    "python.pythonPath": "/Users/matiasramos/.local/share/virtualenvs/api-heroku-TwuSh8uE/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.linting.enabled": true
 }
