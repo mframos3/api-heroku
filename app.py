@@ -47,7 +47,7 @@ def get_messages():
     else:
         result = messages.find({}, {"_id": 0})
     output = [msg for msg in result]
-    return jsonify(output)[0]
+    return jsonify(output)
 
 @app.route("/messages/<int:mid>")
 def get_message(mid):
