@@ -99,8 +99,11 @@ def get_user(uid):
                                 "sender": uid}, {"_id": 0})
     else:
         result = messages.find({"sender": uid}, {"_id": 0})
-    user_messages = [msg for msg in result]
-    user[0]['messages'] = user_messages
+    sent_messages = [msg for msg in result]
+    user[0]['sent_messages'] = sent_messages
+    received = messages.find({"receptant": uid}, {"_id": 0})
+    received_messages = [msg for msg in received]
+    user[0]['received_messages'] = received_messages
     return jsonify(user)
 
 
