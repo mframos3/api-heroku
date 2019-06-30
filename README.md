@@ -4,6 +4,8 @@
 
 - Se recomienda ENCARECIDAMENTE entrar a la página de la API (link de arriba) unos 5-10 minutos antes de probar la aplicación (para que Heroku inicialize el hosting), ya que al realizar búsquedas pesadas sobre la base de datos de MongoDB se pueden producir errores internos en Heroku antes de dicho intervalo de tiempo (al pasar unos minutos funciona sin problemas, aunque tras una media hora de inactividad se vuelve a 'desactivar'). Las consultas más livianas sobre MongoDB no presentan problemas y se pueden probar inmediatamente, pero se recomienda esperar el tiempo indicado arriba para evitar errores.
 
+- Al enviar un mensaje mediante la plataforma, se utilizan las coordenadas (lat/long) del usuario utilizando el servicio de http://ipinfo.io/.
+
 - La dirección en la que está corriendo la API se indicará como "API/" en este 
 Readme.
 
